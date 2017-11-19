@@ -1,18 +1,19 @@
 import React from 'react';
+import Config from './config';
 import './NavBar.css';
 
 const NavBar = (props) => {
   const renderLogger = () => {
     if(props.loggedIn) {
       return (
-        <a className="login-head" href="//localhost:5000/logout">
+        <a className="login-head" href={Config.API_URL + "logout"}>
           <span className="fa-pad fa fa-sign-out"></span>
           Logout
         </a>
       );
     }
     return (
-      <a className="login-head" href="//localhost:5000/authorize/facebook">
+      <a className="login-head" href={Config.API_URL + "authorize/facebook"}>
         <span className="fa-pad fa fa-facebook-official"></span>
         Sign In with Facebook
       </a>
