@@ -6,10 +6,15 @@ const NavBar = (props) => {
   const renderLogger = () => {
     if(props.loggedIn) {
       return (
-        <a className="login-head" href={Config.API_URL + "logout"}>
-          <span className="fa-pad fa fa-sign-out"></span>
-          Logout
-        </a>
+        <div>
+          <a className="user">
+            {props.user.email}
+          </a>
+          <a className="login-head" href={Config.API_URL + "logout"}>
+            <span className="fa-pad fa fa-sign-out"></span>
+            Logout
+          </a>
+      </div>
       );
     }
     return (

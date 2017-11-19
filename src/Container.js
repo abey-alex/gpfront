@@ -6,7 +6,8 @@ import Config from './config'
 class Container extends Component {
   state = {
     loggedIn: false,
-    listings: null
+    listings: null,
+    user: null
   }
 
   componentWillMount() {
@@ -20,7 +21,7 @@ class Container extends Component {
         return response.json();
       }
     }).then(function(json) {
-        if (json && 'user' in json) self.setState({ loggedIn: true, listings: json.listings });
+        if (json && 'user' in json) self.setState({ loggedIn: true, listings: json.listings, user:json.user });
     }).catch(function(error) { console.log(error); });
   }
 
@@ -29,6 +30,7 @@ class Container extends Component {
       <div>
         <NavBar
           loggedIn={this.state.loggedIn}
+          user={this.state.user}
         />
         <LoginComponent loggedIn={this.state.loggedIn} />
         <AppView

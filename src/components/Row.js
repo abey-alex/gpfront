@@ -78,7 +78,7 @@ class Row extends Component {
     const {name, address, phone, rating, listed, status} = this.state;
     let icon = source
     if (icon === 'google') icon = icon + '-plus';
-    let sign = `fa fa-size fa-${status?'check':'times'}`;
+    let sign = `pointer fa fa-size fa-${status?'check':'times'}`;
     let listed_text = listed?'Yes':'No';
 
     const onColor = (key) => {
@@ -104,7 +104,7 @@ class Row extends Component {
       <td data-label=""><i className={`fa fa-size fa-${icon}`} aria-hidden="true"></i></td>
       <td data-label="Source">{source}</td>
       <td data-label="Name">
-        <span onClick={() => onClick('name')} ref={(span) => {this.nodes.name=span}}>
+        <span className="pointer" onClick={() => onClick('name')} ref={(span) => {this.nodes.name=span}}>
           <span className={onColor('name')}>{name}</span>
           <input
             onKeyPress ={(event) => this.handleKeyPress(event, 'name')}
@@ -115,7 +115,7 @@ class Row extends Component {
         </span>
       </td>
       <td data-label="Address">
-        <span onClick={() => onClick('address')} ref={(span) => {this.nodes.address=span}}>
+        <span className="pointer" onClick={() => onClick('address')} ref={(span) => {this.nodes.address=span}}>
           <span className={onColor('address')}>{address}</span>
           <input
             onKeyPress ={(event) => this.handleKeyPress(event, 'address')}
@@ -126,7 +126,7 @@ class Row extends Component {
         </span>
       </td>
       <td data-label="Phone">
-        <span onClick={() => onClick('phone')} ref={(span) => {this.nodes.phone=span}}>
+        <span className="pointer" onClick={() => onClick('phone')} ref={(span) => {this.nodes.phone=span}}>
           <span className={onColor('phone')}>{phone}</span>
           <input
             maxLength="10"
@@ -138,7 +138,7 @@ class Row extends Component {
         </span>
       </td>
       <td data-label="Rating">
-        <span onClick={() => onClick('rating')} ref={(span) => {this.nodes.rating=span}}>
+        <span className="pointer" onClick={() => onClick('rating')} ref={(span) => {this.nodes.rating=span}}>
           <span className={onColor('rating')}>{rating}/5</span>
           <input
             maxLength="1"
@@ -152,7 +152,7 @@ class Row extends Component {
         </span>
       </td>
       <td data-label="Listed">
-        <span onClick={() => this.onClickBool('listed')} ref={(span) => {this.nodes.listed=span}}>
+        <span className="pointer" onClick={() => this.onClickBool('listed')} ref={(span) => {this.nodes.listed=span}}>
           <span className={onColor('listed')}>{listed_text}</span>
         </span>
       </td>

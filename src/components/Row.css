@@ -69,3 +69,7 @@ td[data-label="Source"] {
 .btn:active {
   letter-spacing: 2px;
 }
+
+.pointer {
+  cursor: pointer;
+}

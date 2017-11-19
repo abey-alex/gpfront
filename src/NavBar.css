@@ -43,7 +43,7 @@
   text-decoration: none;
   background-color: bisque;
   padding: 9px;
-  border-radius: 6px;
+  border-radius: 3px;
 }
 
 .fa-pad {
@@ -54,4 +54,14 @@
   background-color: cadetblue;
   border: 1px solid cadetblue;
   color: #fff;
+}
+
+.user {
+  color: #212121;
+  line-height: 20px;
+  text-decoration: none;
+  margin-right: 20px;
+  background-color: #4DD0E1;
+  padding: 9px;
+  border-radius: 3px;
 }
