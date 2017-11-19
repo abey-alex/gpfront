@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import LoginComponent from './LoginComponent';
 import NavBar from './NavBar';
 import AppView from './components/AppView'
-
+import Config from './config'
 class Container extends Component {
   state = {
     loggedIn: false,
@@ -11,7 +11,7 @@ class Container extends Component {
 
   componentWillMount() {
     const self = this;
-    fetch('http://localhost:5000/me', {
+    fetch(Config.API_URL + 'me', {
       method: 'GET',
       credentials: 'include'
     }).then(function(response) {

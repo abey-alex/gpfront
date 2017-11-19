@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Row.css';
-
+import Config from '../config';
 
 class Row extends Component {
   state = {
@@ -61,7 +61,7 @@ class Row extends Component {
   }
 
   onUpdate = (source) => {
-    fetch(`http://localhost:5000/listing/${source}`, {
+    fetch(`${Config.API_URL}listing/${source}`, {
       method: 'POST',
       credentials: 'include',
       body: JSON.stringify(this.state)
