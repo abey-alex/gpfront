@@ -2,7 +2,7 @@ body {margin:0;}
 
 .login-screen {
   margin-top: 65px;
-  padding: 48px 60px;
+  padding: 78px 60px;
   border-radius: 6px;
   margin-bottom: 30px;
   color: inherit;
@@ -12,31 +12,51 @@ body {margin:0;}
 
 .login-screen > h1 {
   font-size: 63px;
-      margin-top: 20px;
-    margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   font-weight: 500;
-    line-height: 1.1;
+  line-height: 1.1;
 }
 
-.login-screen > a {
+.fb {
   padding: 10px 16px;
-    font-size: 18px;
-    line-height: 1.3333333;
-    border-radius: 6px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
   color: #fff;
-    background-color: #337ab7;
-    border-color: #2e6da4;
+  background-color: #337ab7;
+  border-color: #2e6da4;
   font-weight: 400;
   text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
+  white-space: nowrap;
+  vertical-align: middle;
   cursor: pointer;
   border: 1px solid transparent;
   text-decoration: none;
 }
 
-.login-screen > a:hover {
-    color: #fff;
-    background-color: #286090;
-    border-color: #204d74;
+.fb:hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+.other {
+  float:left;
+  clear:left;
+  margin-top: 16px;
+  padding: 0px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #00BCD4;
+  border-color: #00BCD4;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  text-decoration: none;
 }
