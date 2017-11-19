@@ -1,0 +1,48 @@
+.sidebar {
+  width: 15%;
+  background-color: #00bdad;
+  float: left;
+  max-width: 20%;
+  margin: 0;
+  height: 100%;
+  border: 2px solid #d9dcde;
+}
+
+.company {
+  background-color: #00ad9b;
+  padding: 10px 0px;
+  text-align: center;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-top: 15px;
+  padding-left: 0px;
+}
+
+nav ul li {
+  padding: 15px 0;
+}
+
+nav ul li:hover {
+  background-color: #0097A7;
+}
+
+nav ul li i {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li[data-ui="selected"] {
+  background-color: #00878f;
+}
+
+.material-icons {
+  font-size: 20px;
+}

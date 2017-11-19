@@ -1,0 +1,71 @@
+input[type=text] {
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 0px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+span {
+  display: block;
+  overflow: hidden;
+}
+
+td[data-label="Source"] {
+  text-transform: capitalize;
+}
+
+.displayNo {
+  display: none;
+}
+
+.fa-times {
+  color: #fb0000;
+}
+
+.fa-check {
+  color: #38c76f;
+}
+
+.change-color {
+  color: #fca9af;
+}
+
+.btn {
+  outline: none;
+  height: 22px;
+  text-align: center;
+  width: 80px;
+  border-radius: 3px;
+  background: #2487c9;
+  border: 2px solid #2487c9;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.btn:hover {
+  color: #2487c9;
+  background: #fff;
+}
+.btn:active {
+  letter-spacing: 2px;
+}

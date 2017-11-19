@@ -1,0 +1,97 @@
+
+
+.board {
+  border: 2px solid #d9dcde;
+  margin-left: 17%;
+  background-color: #fff;
+}
+
+.title {
+  padding: 15px 0;
+  background-color: #ecf6f4;
+  border-top: 2px solid #d9dcde;
+  border-left: 2px solid #d9dcde;
+  border-right: 2px solid #d9dcde;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+table {
+  border: 2px solid #d9dcde;
+  border-collapse: collapse;
+   margin: 0;
+   padding: 0;
+  width: 82%;
+  table-layout: fixed;
+  color: #6b6b6b;
+}
+table caption {
+  font-size: 1.5em;
+}
+table tr {
+  border: 2px solid #d9dcde;
+}
+table th,
+table td {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 0px;
+  text-align: center;
+}
+table td {
+  font-size: 14px;
+}
+table th {
+  font-size: 16px;
+  letter-spacing: .1em;
+  font-weight: bolder;
+}
+
+.fa-size {
+  font-size: 23px;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 11px;
+    text-align: right;
+  }
+  table td:before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
